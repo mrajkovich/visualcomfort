@@ -1,9 +1,8 @@
 # Your Project's Title...
-Your project's description...
-
+EDS Visual Comfort
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--visual-comfort--timwlee.hlx.page/
+- Live: https://main--visual-comfort--timwlee.hlx.live/
 
 ## Installation
 
