@@ -1,8 +1,8 @@
-# Your Project's Title...
-EDS Visual Comfort
+# EDS Visual Comfort
+
 ## Environments
-- Preview: https://main--visual-comfort--timwlee.hlx.page/
-- Live: https://main--visual-comfort--timwlee.hlx.live/
+- Preview: https://main--visualcomfort--adobeaemxsc.hlx.page/
+- Live: https://main--visualcomfort--adobeaemxsc.hlx.live/
 
 ## Installation
 
