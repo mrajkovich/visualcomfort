@@ -22,7 +22,7 @@
 
   /* fonts */
   --body-font-family: 'proxima-nova', roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --heading-font-family: 'goudy-old-style', 'proxima-nova', roboto-fallback;
   --fixed-font-family: 'proxima-nova', 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -169,6 +169,24 @@ a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
   color: var(--text-color)
+}
+
+a.button-primary {
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  border: solid 1px #333333;
+  background-color: #ffffff;
+  font-weight: 800;
+  line-height: 20px;
+  height: 45px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  width: 130px;
+  justify-content: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 main img {
