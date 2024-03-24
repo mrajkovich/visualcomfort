@@ -383,6 +383,7 @@ header nav .nav-sections ul > li > ul > li > a:hover {
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
     white-space: initial;
+    z-index: 2;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {

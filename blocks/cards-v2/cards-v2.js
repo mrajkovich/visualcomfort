@@ -10,9 +10,9 @@ export default function decorate(block) {
     const ul = document.createElement('ul');
 
     data.forEach((item) => {
-      const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 340 }]);
-      picture.lastElementChild.width = '340';
-      picture.lastElementChild.height = '340';
+      const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 800 }]);
+      picture.lastElementChild.width = '800';
+      picture.lastElementChild.height = '800';
       const createdCard = document.createElement('li');
       createdCard.innerHTML = `
         <a href="${item.url}" class="cards-card-image">
