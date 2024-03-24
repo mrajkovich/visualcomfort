@@ -6,6 +6,7 @@ export default function decorate(block) {
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const link = row.querySelector('a')?.href;
+    const title = row.querySelector('a')?.title;
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
@@ -13,6 +14,7 @@ export default function decorate(block) {
         if (link) {
           const a = document.createElement('a');
           a.href = link;
+          a.setAttribute('aria-label', title);
           a.append(div.cloneNode(true));
           div.replaceWith(a);
           a.className = 'cards-card-image';

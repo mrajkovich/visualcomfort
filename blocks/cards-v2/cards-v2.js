@@ -15,14 +15,14 @@ export default function decorate(block) {
       picture.lastElementChild.height = '800';
       const createdCard = document.createElement('li');
       createdCard.innerHTML = `
-        <a href="${item.url}" class="cards-card-image">
+        <a href="${item.url}" class="cards-card-image" aria-label="${item['anchor-text']}">
           <div data-align="center">${picture.outerHTML}</div>
         </a>
         <div class="cards-card-body">
           <h5>${item.title}</h5>
           <p>${item.description}</p>
           <p class="button-container">
-            <a href="${item.url}" title="${item['anchor-text']}" class="button">${item['anchor-text']}</a>
+            <a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">${item['anchor-text']}</a>
           </p>
         </div>
       `;
