@@ -1,0 +1,110 @@
+.cards-v2 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid; 
+  grid-gap: 24px 16px;
+}
+
+.cards-v2 > ul > li {
+  background-color: var(--background-color)
+}
+
+.cards-v2 .cards-card-image {
+  line-height: 0;
+}
+
+.cards-v2 > ul > li img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.cards-v2 .cards-card-body a {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+}
+
+.cards-v2 .cards-card-body a.single {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cards-v2 .cards-card-body h5 {
+  text-align: unset;
+  margin-top: 1rem;
+}
+
+.cards-v2 .cards-card-body p.button-container a {
+  margin: 0;
+}
+
+.cards-v2 .cards-card-body p {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+/* grid-4 */
+.cards-v2.grid-4 > ul {
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+}
+
+/* grid-3 */
+.cards-v2.grid-3 > ul {
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  grid-gap: 24px 30px;
+}
+
+.cards-v2.grid-3 > ul > li img {
+  max-height: 330px;
+}
+
+/* grid-2 */
+.cards-v2.grid-2 > ul {
+  grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
+  grid-gap: 24px 30px;
+}
+
+.cards-v2.grid-2 > ul > li img {
+  max-height: 530px;
+}
+
+/* center */
+.cards-v2.center .cards-card-body {
+  text-align: center;
+}
+
+/* left-aligned */
+.cards-v2.left-aligned .cards-card-body {
+  text-align: start;
+}
+
+/* right-aligned */
+.cards-v2.right-aligned .cards-card-body {
+  text-align: end;
+}
+
+@media (width <= 768px) {
+  .cards-v2.grid-4 > ul, 
+  .cards-v2.grid-3 > ul,
+  .cards-v2.grid-2 > ul {
+   grid-template-columns: unset;
+  }
+}
+
+@media (width <= 1200px) {
+  .cards-v2.grid-4 > ul {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .cards-v2.grid-3 > ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .cards-v2.grid-2 > ul {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
