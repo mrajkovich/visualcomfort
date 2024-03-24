@@ -3,8 +3,13 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
   border-bottom: 1px solid var(--dark-color);
+}
+
+@media (width <= 1280px) {
+  header .nav-wrapper {
+    position: fixed;
+  }
 }
 
 header nav {
@@ -120,8 +125,8 @@ header nav .nav-hamburger-icon::after {
 header nav[aria-expanded="false"] .nav-hamburger-icon,
 header nav[aria-expanded="false"] .nav-hamburger-icon::before,
 header nav[aria-expanded="false"] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
+  height: 1.5px;
+  border-radius: 1px;
   background: currentcolor;
 }
 
@@ -142,10 +147,10 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   top: 3px;
   left: 1px;
   transform: rotate(45deg);
-  transform-origin: 2px 1px;
+  transform-origin: 1.5px 1px;
   width: 24px;
-  height: 2px;
-  border-radius: 2px;
+  height: 1.5px;
+  border-radius: 1px;
 }
 
 header nav[aria-expanded="true"] .nav-hamburger-icon::after {

@@ -19,6 +19,7 @@
   --dark-color: #ccc;
   --text-color: black;
   --border-color: #d8d8d8;
+  --divider-border-color: #cecece;
 
   /* fonts */
   --body-font-family: 'proxima-nova', roboto-fallback;
@@ -207,19 +208,30 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 50px 15px;
+  box-sizing: border-box;
+}
+
+main .section br {
+  display: none;
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 50px 0;
   }
 }
 
-@media (width >= 900px) {
-  .section > div {
+@media (width >= 1200px) {
+  .section:not(.hero-container) {
     max-width: 1400px;
-    margin: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (width > 600px) and (width < 1200px) {
+  main .section:not(.hero-container) {
+    margin: 0 100px;
   }
 }
 
@@ -227,4 +239,12 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.top-border {
+  border-top: 1px solid var(--divider-border-color);
+}
+
+main .section.bottom-border {
+  border-bottom: 1px solid var(--divider-border-color);
 }
