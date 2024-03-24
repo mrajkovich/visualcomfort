@@ -14,6 +14,7 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
+  --primary-hover-background: #f8f8f8;
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
@@ -189,6 +190,11 @@ a.button-primary {
   font-size: 12px;
 }
 
+a.button-primary:hover {
+  background-color: var(--primary-hover-background);
+  text-decoration: none;
+}
+
 main img {
   max-width: 100%;
   width: auto;
@@ -222,16 +228,24 @@ main .section br {
   }
 }
 
-@media (width >= 1200px) {
-  .section:not(.hero-container, .nav-brand) {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
 
 @media (width > 600px) and (width < 1200px) {
   main .section:not(.hero-container) {
     margin: 0 100px;
+  }
+}
+
+@media (width >= 1200px) and (width < 1400px) {
+  .section:not(.hero-container, .nav-brand) {
+    max-width: 1400px;
+    margin: 0 100px;
+  }
+}
+
+@media (width >= 1400px) {
+  .section:not(.hero-container, .nav-brand) {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
 

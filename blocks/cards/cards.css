@@ -72,18 +72,18 @@
   max-height: 530px;
 }
 
-/* center */
-.cards.center .cards-card-body {
+/* text-center */
+.cards.text-center .cards-card-body {
   text-align: center;
 }
 
-/* left-aligned */
-.cards.left-aligned .cards-card-body {
+/* text-left-align */
+.cards.text-left-align .cards-card-body {
   text-align: start;
 }
 
-/* right-aligned */
-.cards.right-aligned .cards-card-body {
+/* text-right-align */
+.cards.text-right-align .cards-card-body {
   text-align: end;
 }
 

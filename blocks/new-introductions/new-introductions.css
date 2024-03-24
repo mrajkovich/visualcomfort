@@ -62,6 +62,12 @@
 
 .new-introductions .button-container a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-introductions .item-link:hover {
+  text-decoration: none;
 }
 
 @media (width <= 900px) {
