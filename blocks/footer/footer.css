@@ -21,6 +21,12 @@ footer .footer .section {
   padding: 3rem;
 }
 
+@media (width < 1280px) {
+  footer .footer .section {
+    padding: 3rem 15px 0;
+  }
+}
+
 footer .footer-section .default-content-wrapper {
   box-sizing: border-box;
   max-width: 1600px;
@@ -29,6 +35,13 @@ footer .footer-section .default-content-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (width < 1280px) {
+  footer .footer-section .default-content-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .footer .footer-section:first-of-type .default-content-wrapper .column {
@@ -60,6 +73,13 @@ footer .footer-section .default-content-wrapper {
   margin-top: 1.75rem;
 }
 
+@media (width < 1280px) {
+  .footer .default-content-wrapper .list {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
 .footer .default-content-wrapper .list ul {
   list-style: none;
   padding-left: 0;
@@ -68,6 +88,21 @@ footer .footer-section .default-content-wrapper {
 
 .footer .default-content-wrapper .list > ul {
   margin: 0 2rem;
+}
+
+@media (width < 1280px) {
+  .footer .default-content-wrapper .list > ul {
+    margin: 0;
+  }
+
+  .footer .default-content-wrapper .list > ul > li > ul {
+    padding-left: 1rem;
+  }
+
+  .footer .default-content-wrapper .list > ul > li {
+    border-top: 1px solid var(--divider-border-color);
+    padding-top: 1rem;
+  }
 }
 
 .footer .default-content-wrapper .list ul li {
@@ -91,8 +126,19 @@ footer .footer-section .default-content-wrapper {
   margin-bottom: 15px;
 }
 
+.footer .default-content-wrapper .list ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
 footer .footer .footer-section:last-of-type {
   padding: 1.5rem 0 3.5rem;
+}
+
+@media (width < 1280px) {
+  footer .footer .footer-section:last-of-type {
+    padding: 1.5rem 15px 3.5rem;
+  }
 }
 
 footer .footer-section:last-of-type .default-content-wrapper {
@@ -111,7 +157,7 @@ footer .footer-section:last-of-type .default-content-wrapper p:first-of-type img
   height: auto;
 }
 
-@media (width < 1200px) {
+@media (width < 1280px) {
   footer .footer-section .default-content-wrapper {
     flex-direction: column;
   }
