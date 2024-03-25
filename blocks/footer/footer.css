@@ -1,14 +1,29 @@
 footer {
-  padding: 2rem;
-  background-color: var(--light-color);
+  /* padding: 2rem; */
+  background-color: var(--background-color);
   font-size: var(--body-font-size-s);
+  /* border-top: 1px solid var(--divider-border-color); */
 }
 
 footer .footer {
-  max-width: 1200px;
+  /* max-width: 1600px; */
   margin: auto;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer .section {
+  border-top: 1px solid var(--divider-border-color);
+  max-width: 100%;
+}
+
+footer .footer .section:first-of-type {
+  /* padding: 0 30px; */
+
+}
+
+footer .footer .section:last-of-type {
+
 }
