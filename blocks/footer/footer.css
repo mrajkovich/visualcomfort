@@ -55,6 +55,7 @@ footer .footer-section .default-content-wrapper {
   line-height: normal;
   margin-bottom: 0;
 }
+
 .footer .footer-section:first-of-type .column p:nth-child(2) {
   padding-top: 10px;
   font-size: 13px;
@@ -66,12 +67,20 @@ footer .footer-section .default-content-wrapper {
   color: #717171;
 }
 
+.footer .footer-section:first-of-type .column img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+
 .footer .default-content-wrapper .list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 1.75rem;
 }
+
 
 @media (width < 1280px) {
   .footer .default-content-wrapper .list {
@@ -155,6 +164,24 @@ footer .footer-section:last-of-type .default-content-wrapper p {
 footer .footer-section:last-of-type .default-content-wrapper p:first-of-type img {
   width: 270px;
   height: auto;
+}
+
+footer .footer-section:last-of-type .default-content-wrapper p:last-of-type {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (width < 1280px) {
+  footer .footer-section:last-of-type .default-content-wrapper p:last-of-type {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+footer .footer-section:last-of-type .default-content-wrapper p:last-of-type span {
+  margin: 0 0.5rem;
 }
 
 @media (width < 1280px) {
