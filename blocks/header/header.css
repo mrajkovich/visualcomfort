@@ -310,6 +310,10 @@ header nav .nav-sections ul > li > ul > li > a:hover {
   text-decoration-thickness: 2px;
 }
 
+header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul li:last-child img {
+  display: none;
+}
+
 @media (width >= 1280px) {
   header nav .nav-sections {
     display: block;
@@ -359,12 +363,28 @@ header nav .nav-sections ul > li > ul > li > a:hover {
     top: var(--nav-height);
     left: 0;
     width: 100vw;
-    padding: 2rem 5rem;
+    padding: 2rem 10rem;
     background-color: var(--background-color);
     border: 1px solid var(--border-color);
     white-space: initial;
     z-index: 2;
   }
+
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul li:last-child:has(img) {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: calc(100vw - 200px);
+    margin: 0;
+    padding: 2rem;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul li:last-child img {
+    width: 800px;
+    height: auto;
+    display: block;
+  }
+
 }
 
 /* tools */
