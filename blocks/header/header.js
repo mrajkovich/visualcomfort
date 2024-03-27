@@ -65,7 +65,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   if (isDesktop.matches) {
     navDrops.forEach((drop) => {
       if (!drop.hasAttribute('tabindex')) {
-        drop.setAttribute('role', 'button');
+        drop.setAttribute('aria-haspopup', 'true');
         drop.setAttribute('tabindex', 0);
         drop.addEventListener('focus', focusNavSection);
       }
@@ -109,6 +109,13 @@ export default async function decorate(block) {
 
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
+  const icons = navBrand.querySelectorAll('span.icon > img');
+
+  icons.forEach((icon) => {
+    icon.width = '18';
+    icon.height = '18';
+  });
+
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
