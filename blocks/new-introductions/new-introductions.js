@@ -21,5 +21,9 @@ export default function decorate(block) {
   const buttonLink = block.querySelector('.button-container a');
   buttonLink?.classList.add('button-primary');
 
-  block.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  block.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '400' }])));
+  block.querySelectorAll('img').forEach((img) => {
+    img.width = '400';
+    img.height = 'auto';
+  });
 }
