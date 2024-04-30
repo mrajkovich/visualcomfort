@@ -1,8 +1,8 @@
 # EDS Visual Comfort
 
 ## Environments
-- Preview: https://main--visualcomfort--adobeaemxsc.hlx.page/
-- Live: https://main--visualcomfort--adobeaemxsc.hlx.live/
+- Preview: https://main--visualcomfort--adobedevxsc.hlx.page/
+- Live: https://main--visualcomfort--adobedevxsc.hlx.live/
 
 ## Installation
 
